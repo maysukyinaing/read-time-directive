@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'read-time-directive';
+
+  readTime:string=''
+
+  onReadTimeCalculated(readTimeStr:string) {
+    this.readTime = readTimeStr
+  }
 }
